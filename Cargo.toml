@@ -1,0 +1,10 @@
+[package]
+name = "file_encrypt"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rand = "0.8"
+hex = "0.4"
+aes-gcm = "0.10.2" 
+dialoguer = "0.10"
