@@ -5,7 +5,8 @@ use dialoguer::{Input, Select};
 
 //Main function that will run the whole program
 fn main() {
-    //making the console programn more friendly 
+    loop {
+        //making the console programn more friendly 
     //adding some structure
     println!("🔐 Crypto Tool");
     println!("---------------");
@@ -98,9 +99,15 @@ fn main() {
             //tell the user the file has been decrypted
             println!("Your file was decrypted succesfully! -> {}", output_path);
         }
-        _ =>{
-            //last option doesn't do anything only display a bye message
-            println!("👋 Thanks for using my program!")
+        2 =>{
+            //third option exit the program
+            println!("Exiting program...");
+            println!("Thanks for using our app!!");
+            break; // exit the loop, program ends
+        }
+        _ => {
+            println!("Invalid choice, please try again.");
         }
     }
+    } 
 }
